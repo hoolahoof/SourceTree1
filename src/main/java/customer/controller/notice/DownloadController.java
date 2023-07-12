@@ -6,7 +6,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import customer.contoller.Controller;
+import customer.controller.Controller;
 
 public class DownloadController implements Controller {
 

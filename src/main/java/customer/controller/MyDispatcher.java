@@ -7,9 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import customer.controller.member.LoginingController;
-import customer.controller.member.LogoutingController;
 import customer.controller.member.LoginController;
+import customer.controller.member.LoginProcController;
+import customer.controller.member.LogoutProcController;
 import customer.controller.notice.DownloadController;
 import customer.controller.notice.NoticeController;
 import customer.controller.notice.NoticeDelProcController;
@@ -54,9 +54,9 @@ public class MyDispatcher extends HttpServlet {// java단에서 jsp를 받으려
 			} else if (com.equals("/login/loginForm.do")) {
 				controller = new LoginController(); // 객체생성
 			} else if (com.equals("/login/logining.do")) {
-				controller = new LoginingController(); // 객체생성
+				controller = new LoginProcController(); // 객체생성
 			} else if (com.equals("/login/logouting.do")) {
-				controller = new LogoutingController(); // 객체생성
+				controller = new LogoutProcController(); // 객체생성
 			} else if (com.equals("/customer/download.do")) {
 				controller = new DownloadController(); // 객체생성
 			}

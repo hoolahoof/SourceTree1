@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
-import customer.contoller.Controller;
+import customer.controller.Controller;
 import customer.dao.NoticeDao;
 import customer.vo.Notice;
 

@@ -3,7 +3,7 @@ package customer.controller.member;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import customer.contoller.Controller;
+import customer.controller.Controller;
 import customer.dao.MemberDao;
 import customer.vo.Member;
 
@@ -28,7 +28,7 @@ public class LoginProcController implements Controller {
 		if(m==null) {// 아이디 없음
 			request.setAttribute("error", "아이디 없음");
 			request.getRequestDispatcher("loginForm.jsp").forward(request, response);
-		} else if(!m.getPwd().equals(pwd)) {// 비번 틀림
+		} else if(!m.getPw().equals(pwd)) {// 비번 틀림
 			request.setAttribute("error", "비밀번호 틀림");
 			request.getRequestDispatcher("loginForm.jsp").forward(request, response);
 		} else {// 성공

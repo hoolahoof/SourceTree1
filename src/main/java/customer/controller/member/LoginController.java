@@ -3,7 +3,7 @@ package customer.controller.member;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import customer.contoller.Controller;
+import customer.controller.Controller;
 
 public class LoginController implements Controller {
 

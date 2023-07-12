@@ -5,7 +5,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import customer.contoller.Controller;
+import customer.controller.Controller;
 import customer.dao.NoticeDao;
 import customer.vo.Notice;
 

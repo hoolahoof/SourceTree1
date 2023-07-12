@@ -3,7 +3,7 @@ package customer.controller.notice;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import customer.contoller.Controller;
+import customer.controller.Controller;
 import customer.dao.NoticeDao;
 import customer.vo.Notice;
 
@@ -27,7 +27,7 @@ public class NoticeEditProcController implements Controller {
 		dao.update2(seq,title,content);
 		
 		request.setAttribute("n", n);//request에 n이라는 이름으로 n을 저장한다.
-		request.getRequestDispatcher("noticeDetail.jsp").forward(request, response);//request에 있는 정보를 noticeDetail.jsp에 보낸다.
+		request.getRequestDispatcher("/WEB-INF/view/customer/noticeDetail.jsp").forward(request, response);//request에 있는 정보를 noticeDetail.jsp에 보낸다.
 		// response.sendRedirect("noticeDetail.jsp?c="+seq);
 		
 	}

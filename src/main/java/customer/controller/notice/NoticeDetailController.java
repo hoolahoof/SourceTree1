@@ -3,7 +3,7 @@ package customer.controller.notice;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import customer.contoller.Controller;
+import customer.controller.Controller;
 import customer.dao.NoticeDao;
 import customer.vo.Notice;
 
@@ -23,7 +23,7 @@ public class NoticeDetailController implements Controller{
 			// 4단계, request나 session에 처리 결과를 저장 
 			request.setAttribute("n", n);//request에 n이라는 이름으로 n을 보내겠다
 			// 5단계. RequestDispatcher를 사용하여 알맞은 뷰로 포워딩 n값을 noticeDetail.jsp로 보내기 위해 forward처리 
-			request.getRequestDispatcher("noticeDetail.jsp").forward(request,response);
+			request.getRequestDispatcher("/WEB-INF/view/customer/noticeDetail.jsp").forward(request,response);
 			
 			System.out.println("hit : "+hit);
 		 }	

@@ -3,7 +3,7 @@ package customer.controller.notice;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import customer.contoller.Controller;
+import customer.controller.Controller;
 
 public class NoticeRegController implements Controller {
 	@Override
